@@ -5,3 +5,10 @@ services:
     container_name: wso2-is
     ports:
       - 9443:9443
+  web-app-1:
+    image: web-app-1
+    container_name: web-app-1
+    build:
+      context: ./web-app-1
+    ports:
+      - 3001:3001
